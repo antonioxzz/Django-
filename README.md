@@ -1,1 +1,1 @@
-# This is Django project that I used to learn the implementation of Django with python
+# This is Django project that I created in 2023 to learn the implementation of a CRUD using Django with python
