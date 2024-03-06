@@ -1,1 +1,1 @@
-# Django-
+# This is Django project that I used to learn the implementation of Django with python

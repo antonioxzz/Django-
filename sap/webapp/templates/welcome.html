@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+<h1>People Administration System</h1>
+<div>
+    Number of people: {{people_number}}
+</div>
+<div>
+    <a href="new_person">Add person</a>
+</div>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for people in people %}
+        <tr>
+            <td>Persona{{people.id}}</td>
+            <td>{{people.name}} {{people.surname}}</td>
+            <td>{{people.email}}</td>
+            <td><a href="person_detail/{{people.id}}">View</a></td>
+            <td><a href="edit_person/{{people.id}}">Edit</a></td>
+            <td><a href="delete_person/{{people.id}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
